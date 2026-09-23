@@ -4,3 +4,4 @@
 
 
 .install-help{display:none}.button[hidden]{display:none}@media(max-width:900px) and (pointer:coarse){.install-help.is-visible{display:block}}
+@media(display-mode:standalone),(display-mode:minimal-ui){.install-help{display:none!important}}
