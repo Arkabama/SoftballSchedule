@@ -1,16 +1,24 @@
-# SoftballSchedules
+# SoftballSchedule
 
-One hundred independent single-page team templates. The root page does not list teams, and team pages do not link to one another. Give each team its own direct URL. All pages remain public on GitHub Pages; these links and noindex hints do not provide access control. Each team page contains a roster, schedule, and its own home-screen name and icon.
+One hundred single-page team templates. The main page lists all teams. Each team page has its own direct URL and does not link back to the directory or to another team. All pages are public on GitHub Pages; the `noindex` hint does not provide access control.
 
-## Customize
+## Customize a team
 
-- Edit `teams/team-01/index.html` to replace the placeholder roster and schedule table rows with real entries. Repeat for the remaining teams.
-- Change the team name in its HTML title, heading, footer, Apple title, and `manifest.webmanifest`. Rename its directory if desired and update the directory link in the root `index.html`.
-- Replace `icon-192.png` and `icon-512.png` with square team logos of the indicated pixel sizes.
-- Update `--team`, `theme-color`, and manifest colors to match the team.
+- Edit `teams/team-01/index.html` to change its team name, roster rows, and logo placeholder. Replace `<div class="logo-placeholder" ...>Team logo</div>` with an `<img class="team-logo" src="logo.png" alt="Team 01 logo">` and add the logo file to the same folder. Change the team name in its `manifest.webmanifest` too.
+- Replace `icon-192.png` and `icon-512.png` with square team icons if desired.
+- Add games in that team's `schedule.json`. The next-game card automatically chooses the earliest game whose date is today or later, and updates within a minute after the date changes while the page stays open. Past games remain in the schedule. A page reload also gets the latest schedule.
 
-These are examples and contain no real player names or game dates. All links are relative so GitHub Pages works at either a project URL or a custom domain.
+Example `schedule.json`:
 
-## Publish with GitHub Pages
+```json
+{
+  "games": [
+    {"date": "2027-03-06", "time": "11:00 AM", "opponent": "Example Opponent", "location": "Field TBD"},
+    {"date": "2027-03-13", "time": "1:00 PM", "opponent": "Another Opponent", "location": "Field 2"}
+  ]
+}
+```
 
-In repository Settings → Pages, select Deploy from a branch, then `main` and `/ (root)`. Open the resulting Pages URL and select a team. On Android Chrome, use Install app or Add to Home Screen in the browser menu; iOS Safari has Share → Add to Home Screen. Browser support for a separate installed app for each team can vary, particularly when all teams share one origin. Each team still gets a direct page shortcut with its own icon where the browser supports it.
+Use dates in `YYYY-MM-DD` format. Dates are compared using the visitor's local calendar date, so a game stays the next game for its full date. Do not put private player details on these public pages.
+
+All links are relative and work at the GitHub Pages project URL. Publish from `main` and `/ (root)` in Settings → Pages.
