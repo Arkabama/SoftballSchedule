@@ -1,6 +1,6 @@
 # SoftballSchedules
 
-Ten independent single-page team templates. The root page does not list teams, and team pages do not link to one another. Give each team its own direct URL. All pages remain public on GitHub Pages; these links and noindex hints do not provide access control. Each team page contains a roster, schedule, and its own home-screen name and icon.
+One hundred independent single-page team templates. The root page does not list teams, and team pages do not link to one another. Give each team its own direct URL. All pages remain public on GitHub Pages; these links and noindex hints do not provide access control. Each team page contains a roster, schedule, and its own home-screen name and icon.
 
 ## Customize
 
