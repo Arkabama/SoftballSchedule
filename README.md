@@ -25,6 +25,6 @@ All links are relative and work at the GitHub Pages project URL. Publish from `m
 
 Sample Team uses `/SampleTeam/`; the former `/teams/team-100/` URL redirects there.
 
-## Directory editing links
+## Manage teams
 
-The main directory links to each public team page and directly to its GitHub schedule, page source, and asset folder. GitHub requires repository write access to save edits. The directory itself is public, but no team page links back to it. To change a logo, upload an image to the team's asset folder and replace the logo placeholder in `index.html`; the home-screen icons are separate files. The page's `--team` value controls its hero color; shared styling remains in `assets/style.css`.
+The public directory contains team-page links only. For GitHub editing shortcuts, use [.github/TEAM_MANAGEMENT.md](.github/TEAM_MANAGEMENT.md) in this repository. GitHub controls who can save edits.
