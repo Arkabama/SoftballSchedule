@@ -1,3 +1,100 @@
 {
-  "games": []
+  "games": [
+    {
+      "date": "2027-03-01",
+      "time": "7:40 PM",
+      "opponent": "The Outlaws",
+      "location": "Field 4"
+    },
+    {
+      "date": "2027-03-03",
+      "time": "7:40 PM",
+      "opponent": "Red Rockets",
+      "location": "Field 1"
+    },
+    {
+      "date": "2027-03-08",
+      "time": "7:40 PM",
+      "opponent": "Sandlot Heroes",
+      "location": "Field 3"
+    },
+    {
+      "date": "2027-03-10",
+      "time": "6:30 PM",
+      "opponent": "The Fireballs",
+      "location": "Field 4"
+    },
+    {
+      "date": "2027-03-15",
+      "time": "6:30 PM",
+      "opponent": "River Kings",
+      "location": "Field 4"
+    },
+    {
+      "date": "2027-03-17",
+      "time": "8:50 PM",
+      "opponent": "Blue Comets",
+      "location": "Field 1"
+    },
+    {
+      "date": "2027-03-22",
+      "time": "7:40 PM",
+      "opponent": "Diamond Dogs",
+      "location": "Field 2"
+    },
+    {
+      "date": "2027-03-24",
+      "time": "8:50 PM",
+      "opponent": "Thunderbolts",
+      "location": "Field 3"
+    },
+    {
+      "date": "2027-03-29",
+      "time": "6:30 PM",
+      "opponent": "Dust Devils",
+      "location": "Field 3"
+    },
+    {
+      "date": "2027-03-31",
+      "time": "8:50 PM",
+      "opponent": "Silver Sluggers",
+      "location": "Field 3"
+    },
+    {
+      "date": "2027-04-05",
+      "time": "8:50 PM",
+      "opponent": "Iron Wolves",
+      "location": "Field 2"
+    },
+    {
+      "date": "2027-04-07",
+      "time": "6:30 PM",
+      "opponent": "Copperheads",
+      "location": "Field 2"
+    },
+    {
+      "date": "2027-04-12",
+      "time": "6:30 PM",
+      "opponent": "Moonshots",
+      "location": "Field 4"
+    },
+    {
+      "date": "2027-04-14",
+      "time": "7:40 PM",
+      "opponent": "The Sidewinders",
+      "location": "Field 1"
+    },
+    {
+      "date": "2027-04-19",
+      "time": "7:40 PM",
+      "opponent": "Night Owls",
+      "location": "Field 2"
+    },
+    {
+      "date": "2027-04-21",
+      "time": "8:50 PM",
+      "opponent": "The Riptide",
+      "location": "Field 1"
+    }
+  ]
 }
