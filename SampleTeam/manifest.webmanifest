@@ -1,7 +1,7 @@
 {
   "name": "Sample Team Softball",
   "short_name": "Sample Team",
-  "id": "./team-100",
+  "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

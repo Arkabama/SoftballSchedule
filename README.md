@@ -22,3 +22,5 @@ Example `schedule.json`:
 Use dates in `YYYY-MM-DD` format. Dates are compared using the visitor's local calendar date, so a game stays the next game for its full date. Do not put private player details on these public pages.
 
 All links are relative and work at the GitHub Pages project URL. Publish from `main` and `/ (root)` in Settings → Pages.
+
+Sample Team uses `/SampleTeam/`; the former `/teams/team-100/` URL redirects there.
