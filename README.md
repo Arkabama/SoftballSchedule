@@ -24,3 +24,7 @@ Use dates in `YYYY-MM-DD` format. Dates are compared using the visitor's local c
 All links are relative and work at the GitHub Pages project URL. Publish from `main` and `/ (root)` in Settings → Pages.
 
 Sample Team uses `/SampleTeam/`; the former `/teams/team-100/` URL redirects there.
+
+## Directory editing links
+
+The main directory links to each public team page and directly to its GitHub schedule, page source, and asset folder. GitHub requires repository write access to save edits. The directory itself is public, but no team page links back to it. To change a logo, upload an image to the team's asset folder and replace the logo placeholder in `index.html`; the home-screen icons are separate files. The page's `--team` value controls its hero color; shared styling remains in `assets/style.css`.
