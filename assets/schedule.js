@@ -1,6 +1,6 @@
 // Edit a team's schedule.json to add games. Dates use YYYY-MM-DD.
 const scheduleBody=document.querySelector('#schedule-body');
-const nextGame=document.querySelector('#next-game');
+const nextGame=document.querySelector('#next-game-content')||document.querySelector('#next-game');
 function localDate(date){if(typeof date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(date))return null;const [y,m,d]=date.split('-').map(Number);const value=new Date(y,m-1,d);return value.getFullYear()===y&&value.getMonth()===m-1&&value.getDate()===d?value:null}
 function minutes(time){const match=String(time||'').trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);if(!match)return 1440;const hour=Number(match[1]),min=Number(match[2]);return hour>=1&&hour<=12&&min<60?(hour%12)*60+min+(match[3].toUpperCase()==='PM'?720:0):1440}
 function nextUpcomingGame(games,today){const day=new Date(today.getFullYear(),today.getMonth(),today.getDate());return games.filter(g=>localDate(g.date)&&localDate(g.date)>=day).sort((a,b)=>a.date.localeCompare(b.date)||minutes(a.time)-minutes(b.time))[0]||null}
