@@ -13,13 +13,13 @@ Example `schedule.json`:
 ```json
 {
   "games": [
-    {"date": "2027-03-06", "time": "11:00 AM", "opponent": "Example Opponent", "location": "Field TBD"},
-    {"date": "2027-03-13", "time": "1:00 PM", "opponent": "Another Opponent", "location": "Field 2"}
+    {"date": "2027-03-06", "time": "11:00 AM", "opponent": "Example Opponent", "homeAway": "home", "location": "Field TBD"},
+    {"date": "2027-03-13", "time": "1:00 PM", "opponent": "Another Opponent", "homeAway": "away", "location": "Field 2"}
   ]
 }
 ```
 
-Use dates in `YYYY-MM-DD` format. Dates are compared using the visitor's local calendar date, so a game stays the next game for its full date. Do not put private player details on these public pages.
+Set `homeAway` to `home` for `vs.` or `away` for `@` in both the schedule and next-game card. Use dates in `YYYY-MM-DD` format. Dates are compared using the visitor's local calendar date, so a game stays the next game for its full date. Do not put private player details on these public pages.
 
 All links are relative and work at the GitHub Pages project URL. Publish from `main` and `/ (root)` in Settings → Pages.
 
