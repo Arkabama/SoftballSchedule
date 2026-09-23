@@ -1,0 +1,1 @@
+let installPrompt;const button=document.querySelector('#install-button');window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;if(button)button.hidden=false});button?.addEventListener('click',async()=>{if(installPrompt){await installPrompt.prompt();installPrompt=null;button.hidden=true}});
